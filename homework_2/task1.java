@@ -7,7 +7,7 @@ import java.util.logging.FileHandler;
 import java.util.logging.Level;
 
 public class task1 {
-    public static void bubbleSort(int arr[],String pathFile) {
+    public static void bubbleSort(int arr[], String pathFile) {
         int n = arr.length;
         var logger = WriteLog(pathFile);
         for (int i = 0; i < n - 1; i++)
@@ -52,8 +52,7 @@ public class task1 {
         System.out.println(pathProject);
         String pathFile = pathProject.concat("/homework_2/task1.log");
         printArray(arr);
-        bubbleSort(arr, pathFile );
+        bubbleSort(arr, pathFile);
         printArray(arr);
-
     }
 }
